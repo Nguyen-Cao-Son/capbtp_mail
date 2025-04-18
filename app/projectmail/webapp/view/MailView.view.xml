@@ -1,0 +1,8 @@
+<mvc:View controllerName="projectmail.controller.MailView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+     <core:Fragment fragmentName="projectmail.view.fragment.Header" />
+    </Page>
+</mvc:View>
