@@ -1,0 +1,10 @@
+<mvc:View controllerName="projectmail.controller.App"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <App id="app">
+     <Title text="App title"></Title>
+      <!-- <mvc:XMLView viewName="projectmail.view.MailView"></mvc:XMLView> -->
+    </App>
+</mvc:View>
