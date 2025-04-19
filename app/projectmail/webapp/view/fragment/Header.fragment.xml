@@ -4,17 +4,9 @@
     xmlns:f="sap.f"
 >
     <Shell>
-        <Panel>
-            <content>
-                <Input
-                    editable="{Header>/Input/editable}"
-                    change="onChange"
-                    value="{Header>/Input/value1}"
-                    maxLength="30%"
-                /> 
-
-                <Button text="Submit" class="myButton" press="onSubmit" ></Button>
-            </content>
+        <Panel> 
+         <Title text="{Header>/Title}" >
+            </Title>
         </Panel>
     </Shell>
 </core:FragmentDefinition>

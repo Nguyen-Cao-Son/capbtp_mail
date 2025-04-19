@@ -1,0 +1,17 @@
+<core:FragmentDefinition xmlns:form="sap.ui.layout.form"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:f="sap.f"
+> 
+      <form:SimpleForm >
+         <VBox > 
+                <Input
+                    editable="{Create>/Input/editable}"
+                    change="onChange"
+                    value="{Create>/Input/value1}"
+                    maxLength="30%"
+                />
+                <Button text="Submit" class="myButton" press="onSubmit" />
+         </VBox>  
+       </form:SimpleForm>
+</core:FragmentDefinition>
