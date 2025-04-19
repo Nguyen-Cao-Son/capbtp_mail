@@ -16,19 +16,21 @@ sap.ui.define([
                     value1 :"teasd"
                 }
           }
-          console.log(JSONModel);
           var oModel = new JSONModel(ojsonData) ; 
-          this.getView().setModel(oModel,"Header") ;   
+          this.getView().setModel(oModel,"Create") ;    
+
+          var ojsonHeader = { 
+            Title : "Create new form"} 
+          var oModelHeader = new JSONModel(ojsonHeader)
+          this.getView().setModel( oModelHeader ,  "Header" )
+
         } ,
 
         onChange(oEvent){
-         console.log("onChange" , oEvent);
          var value = this.getView().getModel("Header").getProperty("/Input/value1") ;
-         console.log(value);
         } , 
 
         onSubmit(oEvent) {
-            console.log(oEvent);
             var value1 = oEvent.getParameter("text") ; 
             MessageToast.show( value1 )
         }
